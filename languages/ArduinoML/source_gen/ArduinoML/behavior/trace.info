@@ -19,6 +19,15 @@
     <file name="LCD_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.LCD_BehaviorDescriptor" />
     </file>
+    <file name="OutputLCD_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.OutputLCD_BehaviorDescriptor" />
+    </file>
+    <file name="OutputSensor_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.OutputSensor_BehaviorDescriptor" />
+    </file>
+    <file name="Output_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.Output_BehaviorDescriptor" />
+    </file>
     <file name="Sensor_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Sensor_BehaviorDescriptor" />
     </file>

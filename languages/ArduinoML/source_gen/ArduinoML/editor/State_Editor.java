@@ -26,8 +26,6 @@ import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class State_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -39,8 +37,7 @@ public class State_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createCollection_sjqidp_a0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_sjqidp_b0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_sjqidp_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_sjqidp_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_sjqidp_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createCollection_sjqidp_a0(EditorContext editorContext, SNode node) {
@@ -89,17 +86,17 @@ public class State_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_sjqidp_b1a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new State_Editor.actionsListHandler_sjqidp_b1a(node, "actions", editorContext);
+    AbstractCellListHandler handler = new State_Editor.transitionsListHandler_sjqidp_b1a(node, "transitions", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_actions");
+    editorCell.setCellId("refNodeList_transitions");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, 0, false);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class actionsListHandler_sjqidp_b1a extends RefNodeListHandler {
-    public actionsListHandler_sjqidp_b1a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class transitionsListHandler_sjqidp_b1a extends RefNodeListHandler {
+    public transitionsListHandler_sjqidp_b1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -125,61 +122,14 @@ public class State_Editor extends DefaultNodeEditor {
           elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, 0x59fb62ba872b9e8aL, "actions"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, 0x59fb62ba872b9ea0L, "transitions"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
         }
       }
     }
   }
-  private EditorCell createCollection_sjqidp_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_sjqidp_c0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, 0, false);
-    editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createIndentCell_sjqidp_a2a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_sjqidp_b2a(editorContext, node));
-    return editorCell;
-  }
-  private EditorCell createIndentCell_sjqidp_a2a(EditorContext editorContext, SNode node) {
-    EditorCell_Indent editorCell = new EditorCell_Indent(editorContext, node);
-    return editorCell;
-  }
-  private EditorCell createRefNode_sjqidp_b2a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new State_Editor.transitionSingleRoleHandler_sjqidp_b2a(node, MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, 0x59fb62ba872b9ea0L, "transition"), editorContext);
-    return provider.createCell();
-  }
-  private class transitionSingleRoleHandler_sjqidp_b2a extends SingleRoleCellProvider {
-    public transitionSingleRoleHandler_sjqidp_b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(ownerNode, containmentLink, context);
-    }
-    protected EditorCell createChildCell(SNode child) {
-      EditorCell editorCell = super.createChildCell(child);
-      installCellInfo(child, editorCell);
-      return editorCell;
-    }
-    private void installCellInfo(SNode child, EditorCell editorCell) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, 0x59fb62ba872b9ea0L, "transition"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
-      }
-      if (editorCell.getRole() == null) {
-        editorCell.setRole("transition");
-      }
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      EditorCell editorCell = super.createEmptyCell();
-      editorCell.setCellId("empty_transition");
-
-      installCellInfo(null, editorCell);
-      return editorCell;
-    }
-    protected String getNoTargetText() {
-      return "<no transition>";
-    }
-  }
-  private EditorCell createConstant_sjqidp_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_sjqidp_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_sjqidp_d0");
+    editorCell.setCellId("Constant_sjqidp_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
