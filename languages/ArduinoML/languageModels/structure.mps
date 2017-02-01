@@ -242,6 +242,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="78eQDyb0IIO" resolve="Sensor" />
     </node>
+    <node concept="1TJgyi" id="2gbl3MkbzR8" role="1TKVEl">
+      <property role="IQ2nx" value="2597262229270052296" />
+      <property role="TrG5h" value="status" />
+      <ref role="AX2Wp" node="5BVoFE7aTSL" resolve="STATUS" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2gbl3Mkb2Jj">
     <property role="EcuMT" value="2597262229269916627" />

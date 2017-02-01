@@ -12,11 +12,21 @@ public class map_App {
     System.out.println("// Structural concepts");
     System.out.println("void setup() {");
     System.out.println("  pinMode(" + 11 + ", OUTPUT);");
-    System.out.println("  pinMode(" + 10 + ", OUTPUT);");
+    System.out.println("  pinMode(" + 12 + ", INPUT);");
     System.out.println("}");
 
     System.out.println("\n// Behavioral concepts");
     System.out.println("long time = 0; long debounce = 200;\n");
 
+    System.out.println("void state_" + "state1" + "() {");
+    System.out.println("  // Here comes the actions");
+    System.out.println("  boolean guard =  millis() - time > debounce;");
+    System.out.println("  // Here comes the transition");
+    System.out.println("}\n");
+    System.out.println("void state_" + "state2" + "() {");
+    System.out.println("  // Here comes the actions");
+    System.out.println("  boolean guard =  millis() - time > debounce;");
+    System.out.println("  // Here comes the transition");
+    System.out.println("}\n");
   }
 }
