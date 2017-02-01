@@ -427,6 +427,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="VAA6jmwlhY" role="3cqZAp">
+          <node concept="2OqwBi" id="VAA6jmwlhV" role="3clFbG">
+            <node concept="10M0yZ" id="VAA6jmwlhW" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="VAA6jmwlhX" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="VAA6jmwl_9" role="37wK5m">
+                <property role="Xl_RC" value="void loop() {}" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="78eQDyb21G_" role="1B3o_S" />
       <node concept="3cqZAl" id="78eQDyb22Sq" role="3clF45" />
@@ -1024,7 +1038,7 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="VAA6jmuCH$" role="37wK5m">
                 <node concept="Xl_RD" id="VAA6jmuDad" role="3uHU7w">
-                  <property role="Xl_RC" value="\&quot; &amp;&amp; guard {" />
+                  <property role="Xl_RC" value="\&quot; &amp;&amp; guard) {" />
                 </node>
                 <node concept="3cpWs3" id="VAA6jmu_IL" role="3uHU7B">
                   <node concept="Xl_RD" id="VAA6jmuvj6" role="3uHU7B">
@@ -1073,7 +1087,7 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="VAA6jmuYfG" role="37wK5m">
                 <node concept="Xl_RD" id="VAA6jmuYI1" role="3uHU7w">
-                  <property role="Xl_RC" value=" &amp;&amp; guard {" />
+                  <property role="Xl_RC" value=" &amp;&amp; guard) {" />
                 </node>
                 <node concept="3cpWs3" id="VAA6jmuSml" role="3uHU7B">
                   <node concept="3cpWs3" id="VAA6jmuQpJ" role="3uHU7B">

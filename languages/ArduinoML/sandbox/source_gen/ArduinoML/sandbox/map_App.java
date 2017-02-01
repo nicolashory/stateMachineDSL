@@ -22,7 +22,7 @@ public class map_App {
 
     System.out.println("void state_" + "state1" + "() {");
     System.out.println("    boolean guard = millis() - time > debounce;");
-    System.out.println("    if (Serial.available() > 0 && Serial.readString() == \"" + "bonjour" + "\" && guard {");
+    System.out.println("    if (Serial.available() > 0 && Serial.readString() == \"" + "bonjour" + "\" && guard) {");
     System.out.println("        time = millis();");
     System.out.println("        displayOnScreen(\"" + "coucou" + "\");");
     System.out.println("        state = state_" + "state2" + "(); }");
@@ -30,16 +30,17 @@ public class map_App {
     System.out.println("}\n");
     System.out.println("void state_" + "state2" + "() {");
     System.out.println("    boolean guard = millis() - time > debounce;");
-    System.out.println("    if (digitalRead(" + 0 + ") == " + "HIGH" + " && guard {");
+    System.out.println("    if (digitalRead(" + 0 + ") == " + "HIGH" + " && guard) {");
     System.out.println("        time = millis();");
     System.out.println("        digitalWrite(" + 11 + "," + "LOW" + ");");
     System.out.println("        state = state_" + "state1" + "(); }");
-    System.out.println("    if (Serial.available() > 0 && Serial.readString() == \"" + "transition1" + "\" && guard {");
+    System.out.println("    if (Serial.available() > 0 && Serial.readString() == \"" + "transition1" + "\" && guard) {");
     System.out.println("        time = millis();");
     System.out.println("        displayOnScreen(\"" + "transition faite" + "\");");
     System.out.println("        digitalWrite(" + 11 + "," + "LOW" + ");");
     System.out.println("        state = state_" + "state1" + "(); }");
     System.out.println("    else { state_" + "state2" + "(); }");
     System.out.println("}\n");
+    System.out.println("void loop() {}");
   }
 }
