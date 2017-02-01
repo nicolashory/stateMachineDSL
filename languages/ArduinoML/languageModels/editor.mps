@@ -332,6 +332,9 @@
     <ref role="1XX52x" to="67j:2gbl3Mkb2Jj" resolve="ActionLCD" />
     <node concept="3EZMnI" id="2gbl3MkbH06" role="2wV5jI">
       <node concept="2iRfu4" id="2gbl3MkbH07" role="2iSdaV" />
+      <node concept="3F0ifn" id="2gbl3Mkd95F" role="3EZMnx">
+        <property role="3F0ifm" value="display" />
+      </node>
       <node concept="1iCGBv" id="2gbl3MkbH0a" role="3EZMnx">
         <ref role="1NtTu8" to="67j:2gbl3Mkb2Kh" resolve="lcd" />
         <node concept="1sVBvm" id="2gbl3MkbH0b" role="1sWHZn">
@@ -375,6 +378,9 @@
     <node concept="3EZMnI" id="2gbl3MkbvBp" role="2wV5jI">
       <node concept="3F0ifn" id="2gbl3MkbvBr" role="3EZMnx">
         <property role="3F0ifm" value="output" />
+      </node>
+      <node concept="3F0ifn" id="2gbl3MkddFH" role="3EZMnx">
+        <property role="3F0ifm" value="read" />
       </node>
       <node concept="1iCGBv" id="2gbl3MkbvBz" role="3EZMnx">
         <ref role="1NtTu8" to="67j:2gbl3MkanPr" resolve="lcd" />
