@@ -229,6 +229,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="VAA6jmsemn" role="3cqZAp">
+          <node concept="2OqwBi" id="VAA6jmsemk" role="3clFbG">
+            <node concept="10M0yZ" id="VAA6jmseml" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="VAA6jmsemm" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="VAA6jmsfJC" role="37wK5m">
+                <property role="Xl_RC" value="#include &lt;SoftwareSerial.h&gt;\n#include &lt;LiquidCrystal.h&gt;" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3D1Qt1vkCPW" role="3cqZAp">
           <node concept="2OqwBi" id="3D1Qt1vkDZE" role="3clFbG">
             <node concept="10M0yZ" id="3D1Qt1vkDia" role="2Oq$k0">
@@ -285,6 +299,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="VAA6jmshxU" role="3cqZAp">
+          <node concept="2OqwBi" id="VAA6jmshxR" role="3clFbG">
+            <node concept="10M0yZ" id="VAA6jmshxS" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="VAA6jmshxT" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="VAA6jmshP5" role="37wK5m">
+                <property role="Xl_RC" value=" Serial.begin(9600);\n  lcd.begin(16,2); //Initialisation du lcd" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="78eQDyb2xBv" role="3cqZAp">
           <node concept="2OqwBi" id="78eQDyb2xLH" role="3clFbG">
             <node concept="10M0yZ" id="78eQDyb2xBu" role="2Oq$k0">
@@ -294,7 +322,7 @@
             <node concept="liA8E" id="78eQDyb2y84" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="78eQDyb2y9l" role="37wK5m">
-                <property role="Xl_RC" value="  // Here comes bricks declarations" />
+                <property role="Xl_RC" value="  //Déclarations des bricks" />
               </node>
             </node>
           </node>
