@@ -22,12 +22,6 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_6483884641801830740(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
-  public static Object propertyMacro_GetPropertyValue_6483884641801620169(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL, 0x59fb62ba872b9dfcL, "actuator")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, 0x720eda988b03a6aaL, "pin"));
-  }
-  public static Object propertyMacro_GetPropertyValue_6483884641801630272(final PropertyMacroContext _context) {
-    return (SPropertyOperations.getBoolean_def(_context.getNode(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL, 0x59fb62ba872b9dfaL, "status"), null) ? "HIGH" : "LOW");
-  }
   public static Object propertyMacro_GetPropertyValue_6483884641801796419(final PropertyMacroContext _context) {
     return (SPropertyOperations.getBoolean_def(_context.getNode(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9e00L, 0x59fb62ba872b9e1cL, "status"), null) ? "HIGH" : "LOW");
   }

@@ -10,6 +10,8 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Action = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ActionActuator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ActionLCD = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Actuator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_App = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Brick = new ConceptPresentationBuilder().create();
@@ -29,24 +31,28 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 0:
         return props_Action;
       case 1:
-        return props_Actuator;
+        return props_ActionActuator;
       case 2:
-        return props_App;
+        return props_ActionLCD;
       case 3:
-        return props_Brick;
+        return props_Actuator;
       case 4:
-        return props_LCD;
+        return props_App;
       case 5:
-        return props_Output;
+        return props_Brick;
       case 6:
-        return props_OutputLCD;
+        return props_LCD;
       case 7:
-        return props_OutputSensor;
+        return props_Output;
       case 8:
-        return props_Sensor;
+        return props_OutputLCD;
       case 9:
-        return props_State;
+        return props_OutputSensor;
       case 10:
+        return props_Sensor;
+      case 11:
+        return props_State;
+      case 12:
         return props_Transition;
     }
     throw new IllegalStateException("Unknown concept " + c);

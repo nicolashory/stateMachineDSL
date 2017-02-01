@@ -18,8 +18,10 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(11);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(13);
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
+  /*package*/ final ConceptDescriptor myConceptActionActuator = createDescriptorForActionActuator();
+  /*package*/ final ConceptDescriptor myConceptActionLCD = createDescriptorForActionLCD();
   /*package*/ final ConceptDescriptor myConceptActuator = createDescriptorForActuator();
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
   /*package*/ final ConceptDescriptor myConceptBrick = createDescriptorForBrick();
@@ -33,21 +35,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptAction.getId(), 0);
-    myIndexMap.put(myConceptActuator.getId(), 1);
-    myIndexMap.put(myConceptApp.getId(), 2);
-    myIndexMap.put(myConceptBrick.getId(), 3);
-    myIndexMap.put(myConceptLCD.getId(), 4);
-    myIndexMap.put(myConceptOutput.getId(), 5);
-    myIndexMap.put(myConceptOutputLCD.getId(), 6);
-    myIndexMap.put(myConceptOutputSensor.getId(), 7);
-    myIndexMap.put(myConceptSensor.getId(), 8);
-    myIndexMap.put(myConceptState.getId(), 9);
-    myIndexMap.put(myConceptTransition.getId(), 10);
+    myIndexMap.put(myConceptActionActuator.getId(), 1);
+    myIndexMap.put(myConceptActionLCD.getId(), 2);
+    myIndexMap.put(myConceptActuator.getId(), 3);
+    myIndexMap.put(myConceptApp.getId(), 4);
+    myIndexMap.put(myConceptBrick.getId(), 5);
+    myIndexMap.put(myConceptLCD.getId(), 6);
+    myIndexMap.put(myConceptOutput.getId(), 7);
+    myIndexMap.put(myConceptOutputLCD.getId(), 8);
+    myIndexMap.put(myConceptOutputSensor.getId(), 9);
+    myIndexMap.put(myConceptSensor.getId(), 10);
+    myIndexMap.put(myConceptState.getId(), 11);
+    myIndexMap.put(myConceptTransition.getId(), 12);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptBrick, myConceptLCD, myConceptOutput, myConceptOutputLCD, myConceptOutputSensor, myConceptSensor, myConceptState, myConceptTransition);
+    return Arrays.asList(myConceptAction, myConceptActionActuator, myConceptActionLCD, myConceptActuator, myConceptApp, myConceptBrick, myConceptLCD, myConceptOutput, myConceptOutputLCD, myConceptOutputSensor, myConceptSensor, myConceptState, myConceptTransition);
   }
 
   @Override
@@ -61,24 +65,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 0:
         return myConceptAction;
       case 1:
-        return myConceptActuator;
+        return myConceptActionActuator;
       case 2:
-        return myConceptApp;
+        return myConceptActionLCD;
       case 3:
-        return myConceptBrick;
+        return myConceptActuator;
       case 4:
-        return myConceptLCD;
+        return myConceptApp;
       case 5:
-        return myConceptOutput;
+        return myConceptBrick;
       case 6:
-        return myConceptOutputLCD;
+        return myConceptLCD;
       case 7:
-        return myConceptOutputSensor;
+        return myConceptOutput;
       case 8:
-        return myConceptSensor;
+        return myConceptOutputLCD;
       case 9:
-        return myConceptState;
+        return myConceptOutputSensor;
       case 10:
+        return myConceptSensor;
+      case 11:
+        return myConceptState;
+      case 12:
         return myConceptTransition;
       default:
         throw new IllegalStateException();
@@ -96,7 +104,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   private static ConceptDescriptor createDescriptorForAction() {
-    return new ConceptDescriptorBuilder("ArduinoML.structure.Action", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x59fb62ba872b9dfaL, "status", new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801182714"))).properties("status").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x59fb62ba872b9dfcL, "actuator", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2bL), false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801182716"))).references("actuator").sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801181722")).create();
+    return new ConceptDescriptorBuilder("ArduinoML.structure.Action", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801181722")).create();
+  }
+  private static ConceptDescriptor createDescriptorForActionActuator() {
+    return new ConceptDescriptorBuilder("ArduinoML.structure.ActionActuator", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x240b543c942c2befL)).super_("ArduinoML.structure.Action").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL)).parents("ArduinoML.structure.Action").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x240b543c942c2c0dL, "status", new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269916685"))).properties("status").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x240b543c942c2c0bL, "actuator", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2bL), false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269916683"))).references("actuator").sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269916655")).create();
+  }
+  private static ConceptDescriptor createDescriptorForActionLCD() {
+    return new ConceptDescriptorBuilder("ArduinoML.structure.ActionLCD", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x240b543c942c2bd3L)).super_("ArduinoML.structure.Action").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL)).parents("ArduinoML.structure.Action").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x240b543c942c2c13L, "message", new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269916691"))).properties("message").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x240b543c942c2c11L, "lcd", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x36baf606c3055047L), false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269916689"))).references("lcd").sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269916627")).create();
   }
   private static ConceptDescriptor createDescriptorForActuator() {
     return new ConceptDescriptorBuilder("ArduinoML.structure.Actuator", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2bL)).super_("ArduinoML.structure.Brick").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL)).parents("ArduinoML.structure.Brick").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL)).sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "8218746718699866923")).create();
@@ -114,16 +128,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("ArduinoML.structure.Output", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6722254920715924154")).create();
   }
   private static ConceptDescriptor createDescriptorForOutputLCD() {
-    return new ConceptDescriptorBuilder("ArduinoML.structure.OutputLCD", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2bdL)).super_("ArduinoML.structure.Output").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).parents("ArduinoML.structure.Output").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6722254920715924157")).create();
+    return new ConceptDescriptorBuilder("ArduinoML.structure.OutputLCD", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2bdL)).super_("ArduinoML.structure.Output").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).parents("ArduinoML.structure.Output").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x240b543c942c2c16L, "message", new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269916694"))).properties("message").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x240b543c94297d5bL, "lcd", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x36baf606c3055047L), false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269740891"))).references("lcd").sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6722254920715924157")).create();
   }
   private static ConceptDescriptor createDescriptorForOutputSensor() {
-    return new ConceptDescriptorBuilder("ArduinoML.structure.OutputSensor", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2beL)).super_("ArduinoML.structure.Output").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).parents("ArduinoML.structure.Output").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6722254920715924158")).create();
+    return new ConceptDescriptorBuilder("ArduinoML.structure.OutputSensor", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2beL)).super_("ArduinoML.structure.Output").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).parents("ArduinoML.structure.Output").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x240b543c94297d23L, "sensor", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b02ebb4L), false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "2597262229269740835"))).references("sensor").sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6722254920715924158")).create();
   }
   private static ConceptDescriptor createDescriptorForSensor() {
     return new ConceptDescriptorBuilder("ArduinoML.structure.Sensor", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b02ebb4L)).super_("ArduinoML.structure.Brick").version(1).super_(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL)).parents("ArduinoML.structure.Brick").parentIds(MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL)).sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "8218746718699842484")).create();
   }
   private static ConceptDescriptor createDescriptorForState() {
-    return new ConceptDescriptorBuilder("ArduinoML.structure.State", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x59fb62ba872b9ea0L, "transitions", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9e00L), true, true, false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801182880"))).children(new String[]{"transitions"}, new boolean[]{true}).sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801180718")).create();
+    return new ConceptDescriptorBuilder("ArduinoML.structure.State", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x59fb62ba872b9ea0L, "transitions", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9e00L), false, true, false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801182880"))).children(new String[]{"transitions"}, new boolean[]{true}).sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801180718")).create();
   }
   private static ConceptDescriptor createDescriptorForTransition() {
     return new ConceptDescriptorBuilder("ArduinoML.structure.Transition", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9e00L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x59fb62ba872b9e1cL, "status", new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801182748"))).properties("status").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x59fb62ba872cb173L, "target", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL), false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801253235"))).references("target").childDescriptors(new ConceptDescriptorBuilder.Link(0x4bde47a60bf58068L, "actions", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9a1aL), true, true, false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "5466885776165142632")), new ConceptDescriptorBuilder.Link(0x5d4a3f3bfee4f2c4L, "output", MetaIdFactory.conceptId(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2baL), false, false, false, new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6722254920715924164"))).children(new String[]{"actions", "output"}, new boolean[]{true, false}).sourceNode(new SNodePointer("r:c3495eae-2a50-4eb5-87a2-5e8ab67ad9fe(ArduinoML.structure)", "6483884641801182720")).create();

@@ -29,14 +29,14 @@ public class Action_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_8bscln_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("actuator");
-    provider.setNoTargetText("<no actuator>");
+    provider.setRole("");
+    provider.setNoTargetText("<no null>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Action_Editor._Inline_8bscln_a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("actuator");
+      editorCell.setRole("");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -81,11 +81,11 @@ public class Action_Editor extends DefaultNodeEditor {
   }
   private EditorCell createProperty_8bscln_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("status");
-    provider.setNoTargetText("<no status>");
+    provider.setRole("");
+    provider.setNoTargetText("<no null>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_status");
+    editorCell.setCellId("property_null");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

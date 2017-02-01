@@ -122,7 +122,7 @@
     <node concept="1TJgyj" id="5BVoFE7aTUw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="transitions" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <property role="IQ2ns" value="6483884641801182880" />
       <ref role="20lvS9" node="5BVoFE7aTS0" resolve="Transition" />
     </node>
@@ -130,19 +130,8 @@
   <node concept="1TIwiD" id="5BVoFE7aTCq">
     <property role="TrG5h" value="Action" />
     <property role="EcuMT" value="6483884641801181722" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5BVoFE7aTRU" role="1TKVEl">
-      <property role="TrG5h" value="status" />
-      <property role="IQ2nx" value="6483884641801182714" />
-      <ref role="AX2Wp" node="5BVoFE7aTSL" resolve="STATUS" />
-    </node>
-    <node concept="1TJgyj" id="5BVoFE7aTRW" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="actuator" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="6483884641801182716" />
-      <ref role="20lvS9" node="78eQDyb0OGF" resolve="Actuator" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5BVoFE7aTS0">
     <property role="TrG5h" value="Transition" />
@@ -229,11 +218,64 @@
     <property role="EcuMT" value="6722254920715924157" />
     <property role="TrG5h" value="OutputLCD" />
     <ref role="1TJDcQ" node="5PafNJYTfaU" resolve="Output" />
+    <node concept="1TJgyj" id="2gbl3MkanPr" role="1TKVEi">
+      <property role="IQ2ns" value="2597262229269740891" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="lcd" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3qUXwr31l17" resolve="LCD" />
+    </node>
+    <node concept="1TJgyi" id="2gbl3Mkb2Km" role="1TKVEl">
+      <property role="IQ2nx" value="2597262229269916694" />
+      <property role="TrG5h" value="message" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5PafNJYTfaY">
     <property role="EcuMT" value="6722254920715924158" />
     <property role="TrG5h" value="OutputSensor" />
     <ref role="1TJDcQ" node="5PafNJYTfaU" resolve="Output" />
+    <node concept="1TJgyj" id="2gbl3MkanOz" role="1TKVEi">
+      <property role="IQ2ns" value="2597262229269740835" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sensor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="78eQDyb0IIO" resolve="Sensor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2gbl3Mkb2Jj">
+    <property role="EcuMT" value="2597262229269916627" />
+    <property role="TrG5h" value="ActionLCD" />
+    <ref role="1TJDcQ" node="5BVoFE7aTCq" resolve="Action" />
+    <node concept="1TJgyj" id="2gbl3Mkb2Kh" role="1TKVEi">
+      <property role="IQ2ns" value="2597262229269916689" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="lcd" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3qUXwr31l17" resolve="LCD" />
+    </node>
+    <node concept="1TJgyi" id="2gbl3Mkb2Kj" role="1TKVEl">
+      <property role="IQ2nx" value="2597262229269916691" />
+      <property role="TrG5h" value="message" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2gbl3Mkb2JJ">
+    <property role="EcuMT" value="2597262229269916655" />
+    <property role="TrG5h" value="ActionActuator" />
+    <ref role="1TJDcQ" node="5BVoFE7aTCq" resolve="Action" />
+    <node concept="1TJgyj" id="2gbl3Mkb2Kb" role="1TKVEi">
+      <property role="IQ2ns" value="2597262229269916683" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actuator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="78eQDyb0OGF" resolve="Actuator" />
+    </node>
+    <node concept="1TJgyi" id="2gbl3Mkb2Kd" role="1TKVEl">
+      <property role="IQ2nx" value="2597262229269916685" />
+      <property role="TrG5h" value="status" />
+      <ref role="AX2Wp" node="5BVoFE7aTSL" resolve="STATUS" />
+    </node>
   </node>
 </model>
 

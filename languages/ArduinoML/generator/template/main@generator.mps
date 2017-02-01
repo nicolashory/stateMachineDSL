@@ -184,7 +184,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="5BVoFE7cwm4" role="3acgRq">
-      <ref role="30HIoZ" to="67j:5BVoFE7aTCq" resolve="Action" />
+      <ref role="30HIoZ" to="67j:2gbl3Mkb2Jj" resolve="ActionLCD" />
       <node concept="j$656" id="5BVoFE7cx0R" role="1lVwrX">
         <ref role="v9R2y" node="5BVoFE7cx0P" resolve="reduce_Action" />
       </node>
@@ -628,27 +628,6 @@
                       </node>
                       <node concept="3cmrfG" id="5BVoFE7cxX8" role="3uHU7w">
                         <property role="3cmrfH" value="0" />
-                        <node concept="17Uvod" id="5BVoFE7c$F8" role="lGtFl">
-                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
-                          <property role="2qtEX9" value="value" />
-                          <node concept="3zFVjK" id="5BVoFE7c$F9" role="3zH0cK">
-                            <node concept="3clFbS" id="5BVoFE7c$Fa" role="2VODD2">
-                              <node concept="3clFbF" id="5BVoFE7c_67" role="3cqZAp">
-                                <node concept="2OqwBi" id="5BVoFE7c_TD" role="3clFbG">
-                                  <node concept="2OqwBi" id="5BVoFE7c_cH" role="2Oq$k0">
-                                    <node concept="30H73N" id="5BVoFE7c_66" role="2Oq$k0" />
-                                    <node concept="3TrEf2" id="5BVoFE7c__r" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="67j:5BVoFE7aTRW" resolve="actuator" />
-                                    </node>
-                                  </node>
-                                  <node concept="3TrcHB" id="5BVoFE7cAff" role="2OqNvi">
-                                    <ref role="3TsBF5" to="67j:78eQDyb0UqE" resolve="pin" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5BVoFE7cyDJ" role="3uHU7w">
@@ -657,30 +636,6 @@
                   </node>
                   <node concept="Xl_RD" id="5BVoFE7cza2" role="3uHU7w">
                     <property role="Xl_RC" value="SIGNAL" />
-                    <node concept="17Uvod" id="5BVoFE7cB8Z" role="lGtFl">
-                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                      <property role="2qtEX9" value="value" />
-                      <node concept="3zFVjK" id="5BVoFE7cB90" role="3zH0cK">
-                        <node concept="3clFbS" id="5BVoFE7cB91" role="2VODD2">
-                          <node concept="3clFbF" id="5BVoFE7cBK9" role="3cqZAp">
-                            <node concept="3K4zz7" id="5BVoFE7cF9g" role="3clFbG">
-                              <node concept="Xl_RD" id="5BVoFE7cGj$" role="3K4GZi">
-                                <property role="Xl_RC" value="LOW" />
-                              </node>
-                              <node concept="2OqwBi" id="5BVoFE7cFi$" role="3K4Cdx">
-                                <node concept="30H73N" id="5BVoFE7cFe$" role="2Oq$k0" />
-                                <node concept="3TrcHB" id="5BVoFE7cFAb" role="2OqNvi">
-                                  <ref role="3TsBF5" to="67j:5BVoFE7aTRU" resolve="status" />
-                                </node>
-                              </node>
-                              <node concept="Xl_RD" id="5BVoFE7cG0k" role="3K4E3e">
-                                <property role="Xl_RC" value="HIGH" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                   </node>
                 </node>
               </node>

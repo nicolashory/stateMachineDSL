@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root>
+    <file name="ActionActuator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.ActionActuator_BehaviorDescriptor" />
+    </file>
+    <file name="ActionLCD_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ArduinoML.behavior.ActionLCD_BehaviorDescriptor" />
+    </file>
     <file name="Action_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ArduinoML.behavior.Action_BehaviorDescriptor" />
     </file>
