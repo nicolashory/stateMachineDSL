@@ -21,17 +21,18 @@ public class map_App {
     System.out.println("long time = 0; long debounce = 200;\n");
 
     System.out.println("void state_" + "state1" + "() {");
-    System.out.println("  if (digitalRead(" + 0 + ") == " + "LOW" + " && guard ) {");
-    System.out.println("    time = millis(); state_" + "state2" + "(); ");
-    System.out.println("  } else { state_" + "state2" + "(); }");
+    System.out.println("    boolean guard = millis() - time > debounce;");
+    System.out.println("    if (Serial.available() > 0 && Serial.readString() == \"" + "bonjour" + "\" && guard {");
+    System.out.println("        time = millis(); state_" + "state2" + "(); } ");
+    System.out.println("    else { state_" + "state1" + "(); }");
     System.out.println("}\n");
     System.out.println("void state_" + "state2" + "() {");
-    System.out.println("  if (digitalRead(" + 0 + ") == " + "LOW" + " && guard ) {");
-    System.out.println("    time = millis(); state_" + "state1" + "(); ");
-    System.out.println("  } else { state_" + "state1" + "(); }");
-    System.out.println("  if (digitalRead(" + 0 + ") == " + "LOW" + " && guard ) {");
-    System.out.println("    time = millis(); state_" + "state1" + "(); ");
-    System.out.println("  } else { state_" + "state1" + "(); }");
+    System.out.println("    boolean guard = millis() - time > debounce;");
+    System.out.println("    if (digitalRead(" + 0 + ") == " + "HIGH" + " && guard {");
+    System.out.println("        time = millis(); state_" + "state1" + "(); } ");
+    System.out.println("    if (Serial.available() > 0 && Serial.readString() == \"" + "transition1" + "\" && guard {");
+    System.out.println("        time = millis(); state_" + "state1" + "(); } ");
+    System.out.println("    else { state_" + "state2" + "(); }");
     System.out.println("}\n");
   }
 }
