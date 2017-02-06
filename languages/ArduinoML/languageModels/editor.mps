@@ -374,13 +374,16 @@
     </node>
   </node>
   <node concept="24kQdi" id="2gbl3MkbvAJ">
-    <ref role="1XX52x" to="67j:5PafNJYTfaX" resolve="OutputLCD" />
+    <ref role="1XX52x" to="67j:5PafNJYTfaX" resolve="OutputSerial" />
     <node concept="3EZMnI" id="2gbl3MkbvBp" role="2wV5jI">
       <node concept="3F0ifn" id="2gbl3MkbvBr" role="3EZMnx">
         <property role="3F0ifm" value="output" />
       </node>
       <node concept="3F0ifn" id="2gbl3MkddFH" role="3EZMnx">
         <property role="3F0ifm" value="read" />
+      </node>
+      <node concept="3F0ifn" id="1R4EZf6sHyW" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0ifn" id="2gbl3MkbvBQ" role="3EZMnx">
         <property role="3F0ifm" value="&quot;" />
@@ -408,6 +411,9 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="1R4EZf6s$0m" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0A7n" id="2gbl3MkbzRa" role="3EZMnx">
         <ref role="1NtTu8" to="67j:2gbl3MkbzR8" resolve="status" />
