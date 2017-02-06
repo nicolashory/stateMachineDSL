@@ -43,6 +43,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_1073713120036937066(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2bdL, 0x240b543c942c2c16L, "message"));
   }
+  public static Object propertyMacro_GetPropertyValue_2145028386029870884(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2beL, 0x240b543c94297d23L, "sensor")), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x720eda988b034b2cL, 0x720eda988b03a6aaL, "pin"));
+  }
   public static Object propertyMacro_GetPropertyValue_1073713120037014624(final PropertyMacroContext _context) {
     return (SPropertyOperations.getBoolean_def(_context.getNode(), MetaAdapterFactory.getProperty(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x5d4a3f3bfee4f2beL, 0x240b543c942e3dc8L, "status"), null) ? "HIGH" : "LOW");
   }

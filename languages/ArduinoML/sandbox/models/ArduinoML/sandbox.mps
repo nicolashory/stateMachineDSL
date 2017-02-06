@@ -14,9 +14,8 @@
         <property id="2597262229270052296" name="status" index="2K9mBO" />
         <reference id="2597262229269740835" name="sensor" index="2K8y$v" />
       </concept>
-      <concept id="6722254920715924157" name="ArduinoML.structure.OutputLCD" flags="ng" index="2zFGQ6">
+      <concept id="6722254920715924157" name="ArduinoML.structure.OutputSerial" flags="ng" index="2zFGQ6">
         <property id="2597262229269916694" name="message" index="2K9RwE" />
-        <reference id="2597262229269740891" name="lcd" index="2K8y_B" />
       </concept>
       <concept id="2597262229269916655" name="ArduinoML.structure.ActionActuator" flags="ng" index="2K9RZj">
         <property id="2597262229269916685" name="status" index="2K9RwL" />
@@ -76,9 +75,8 @@
           <property role="2K9RwJ" value="coucou" />
           <ref role="2K9RwH" node="2ZmAQRvHINb" />
         </node>
-        <node concept="2zFGQ6" id="2gbl3MkbvA6" role="2zFGRZ">
+        <node concept="2zFGQ6" id="1R4EZf6snGs" role="2zFGRZ">
           <property role="2K9RwE" value="bonjour" />
-          <ref role="2K8y_B" node="2ZmAQRvHINb" />
         </node>
       </node>
     </node>
@@ -99,10 +97,6 @@
       <node concept="3uOfMU" id="2gbl3Mkd8Cd" role="3uOfKq">
         <property role="TrG5h" value="transition2" />
         <ref role="3uPXf9" node="2gbl3Mkbn4F" resolve="state1" />
-        <node concept="2zFGQ6" id="2gbl3Mkd8Ck" role="2zFGRZ">
-          <property role="2K9RwE" value="transition1" />
-          <ref role="2K8y_B" node="2ZmAQRvHINb" />
-        </node>
         <node concept="2K9RZJ" id="2gbl3Mkd8Cn" role="10aWve">
           <property role="2K9RwJ" value="transition faite" />
           <ref role="2K9RwH" node="2ZmAQRvHINb" />
@@ -111,7 +105,24 @@
           <property role="2K9RwL" value="false" />
           <ref role="2K9RwR" node="3kxaSLuyMfL" resolve="red_led" />
         </node>
+        <node concept="2zFGQ6" id="1R4EZf6snGW" role="2zFGRZ">
+          <property role="2K9RwE" value="salut" />
+        </node>
       </node>
+    </node>
+  </node>
+  <node concept="3T3p6P" id="1R4EZf6sssy">
+    <property role="TrG5h" value="MissileLauncher" />
+    <node concept="3PJUp1" id="1R4EZf6sssY" role="1_4667">
+      <property role="1_3wBA" value="2, 3, 4, 5, 6, 7, 8" />
+    </node>
+    <node concept="3T334G" id="1R4EZf6sst0" role="3T3nKE">
+      <property role="TrG5h" value="redButton" />
+      <property role="3T3nKM" value="1" />
+    </node>
+    <node concept="3T3p6N" id="1R4EZf6sst5" role="3T3nKE">
+      <property role="TrG5h" value="redLight" />
+      <property role="3T3nKM" value="9" />
     </node>
   </node>
 </model>

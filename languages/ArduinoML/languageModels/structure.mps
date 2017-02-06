@@ -216,15 +216,8 @@
   </node>
   <node concept="1TIwiD" id="5PafNJYTfaX">
     <property role="EcuMT" value="6722254920715924157" />
-    <property role="TrG5h" value="OutputLCD" />
+    <property role="TrG5h" value="OutputSerial" />
     <ref role="1TJDcQ" node="5PafNJYTfaU" resolve="Output" />
-    <node concept="1TJgyj" id="2gbl3MkanPr" role="1TKVEi">
-      <property role="IQ2ns" value="2597262229269740891" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="lcd" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3qUXwr31l17" resolve="LCD" />
-    </node>
     <node concept="1TJgyi" id="2gbl3Mkb2Km" role="1TKVEl">
       <property role="IQ2nx" value="2597262229269916694" />
       <property role="TrG5h" value="message" />

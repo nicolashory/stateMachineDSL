@@ -71,8 +71,8 @@
     <classNode dependClassName="ArduinoML.editor.Actuator_Editor" />
     <classNode dependClassName="ArduinoML.editor.App_Editor" />
     <classNode dependClassName="ArduinoML.editor.LCD_Editor" />
-    <classNode dependClassName="ArduinoML.editor.OutputLCD_Editor" />
     <classNode dependClassName="ArduinoML.editor.OutputSensor_Editor" />
+    <classNode dependClassName="ArduinoML.editor.OutputSerial_Editor" />
     <classNode dependClassName="ArduinoML.editor.Sensor_Editor" />
     <classNode dependClassName="ArduinoML.editor.State_Editor" />
     <classNode dependClassName="ArduinoML.editor.Transition_Editor" />
@@ -101,7 +101,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="ArduinoML.editor.OutputLCD_Editor" file="OutputLCD_Editor.java">
+  <dependency className="ArduinoML.editor.OutputSensor_Editor" file="OutputSensor_Editor.java">
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
@@ -114,11 +114,9 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="ArduinoML.editor.OutputSensor_Editor" file="OutputSensor_Editor.java">
+  <dependency className="ArduinoML.editor.OutputSerial_Editor" file="OutputSerial_Editor.java">
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.InlineCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />

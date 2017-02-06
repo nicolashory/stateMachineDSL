@@ -1097,6 +1097,27 @@
                       </node>
                       <node concept="3cmrfG" id="VAA6jmuP1p" role="3uHU7w">
                         <property role="3cmrfH" value="0" />
+                        <node concept="17Uvod" id="1R4EZf6s9Wz" role="lGtFl">
+                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                          <property role="2qtEX9" value="value" />
+                          <node concept="3zFVjK" id="1R4EZf6s9W$" role="3zH0cK">
+                            <node concept="3clFbS" id="1R4EZf6s9W_" role="2VODD2">
+                              <node concept="3clFbF" id="1R4EZf6sbc1" role="3cqZAp">
+                                <node concept="2OqwBi" id="1R4EZf6scql" role="3clFbG">
+                                  <node concept="2OqwBi" id="1R4EZf6sbtV" role="2Oq$k0">
+                                    <node concept="30H73N" id="1R4EZf6sbc0" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="1R4EZf6sbQf" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="67j:2gbl3MkanOz" resolve="sensor" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrcHB" id="1R4EZf6scRo" role="2OqNvi">
+                                    <ref role="3TsBF5" to="67j:78eQDyb0UqE" resolve="pin" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                     <node concept="Xl_RD" id="VAA6jmuRp8" role="3uHU7w">

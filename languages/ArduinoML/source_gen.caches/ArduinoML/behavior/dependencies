@@ -38,11 +38,11 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ArduinoML.behavior.OutputLCD_BehaviorDescriptor" file="OutputLCD_BehaviorDescriptor.java">
+  <dependency className="ArduinoML.behavior.OutputSensor_BehaviorDescriptor" file="OutputSensor_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ArduinoML.behavior.OutputSensor_BehaviorDescriptor" file="OutputSensor_BehaviorDescriptor.java">
+  <dependency className="ArduinoML.behavior.OutputSerial_BehaviorDescriptor" file="OutputSerial_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

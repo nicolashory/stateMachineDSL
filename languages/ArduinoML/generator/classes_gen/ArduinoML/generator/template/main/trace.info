@@ -3,7 +3,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="14,0,68,0" name="ArduinoML.generator.template.main.QueriesGenerated" />
+      <unit at="14,0,71,0" name="ArduinoML.generator.template.main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/1073713120036615675">
@@ -22,18 +22,20 @@
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/1073713120036910229">
     <file name="QueriesGenerated.java">
-      <node id="1073713120037015476" at="46,112,47,217" concept="0" />
-      <scope id="1073713120037014625" at="46,112,47,217" />
+      <node id="2145028386029875969" at="46,112,47,343" concept="0" />
+      <node id="1073713120037015476" at="49,112,50,217" concept="0" />
+      <scope id="2145028386029870885" at="46,112,47,343" />
+      <scope id="1073713120037014625" at="49,112,50,217" />
     </file>
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/6483884641801605129">
     <file name="QueriesGenerated.java">
       <node id="1073713120036561155" at="22,112,23,175" concept="0" />
       <node id="1073713120036839981" at="25,112,26,175" concept="0" />
-      <node id="1073713120036602654" at="61,120,62,197" concept="0" />
+      <node id="1073713120036602654" at="64,120,65,197" concept="0" />
       <scope id="1073713120036561149" at="22,112,23,175" />
       <scope id="1073713120036837956" at="25,112,26,175" />
-      <scope id="1073713120036602648" at="61,120,62,197" />
+      <scope id="1073713120036602648" at="64,120,65,197" />
     </file>
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/6483884641801605173">
@@ -45,11 +47,11 @@
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/6483884641801605205">
     <file name="QueriesGenerated.java">
       <node id="1073713120037272436" at="31,112,32,333" concept="0" />
-      <node id="1073713120036885779" at="52,108,53,190" concept="0" />
-      <node id="1073713120037264394" at="64,120,65,193" concept="0" />
+      <node id="1073713120036885779" at="55,108,56,190" concept="0" />
+      <node id="1073713120037264394" at="67,120,68,193" concept="0" />
       <scope id="1073713120037271542" at="31,112,32,333" />
-      <scope id="1073713120036885773" at="52,108,53,190" />
-      <scope id="1073713120037264388" at="64,120,65,193" />
+      <scope id="1073713120036885773" at="55,108,56,190" />
+      <scope id="1073713120037264388" at="67,120,68,193" />
     </file>
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/6487786729268334387">
@@ -60,12 +62,12 @@
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/8218746718700166393">
     <file name="QueriesGenerated.java">
-      <node id="4197875816661692346" at="49,108,50,187" concept="0" />
-      <node id="8218746718700471134" at="55,120,56,192" concept="0" />
-      <node id="6483884641801756138" at="58,120,59,192" concept="0" />
-      <scope id="4197875816661692340" at="49,108,50,187" />
-      <scope id="8218746718700471128" at="55,120,56,192" />
-      <scope id="6483884641801756132" at="58,120,59,192" />
+      <node id="4197875816661692346" at="52,108,53,187" concept="0" />
+      <node id="8218746718700471134" at="58,120,59,192" concept="0" />
+      <node id="6483884641801756138" at="61,120,62,192" concept="0" />
+      <scope id="4197875816661692340" at="52,108,53,187" />
+      <scope id="8218746718700471128" at="58,120,59,192" />
+      <scope id="6483884641801756132" at="61,120,62,192" />
     </file>
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/8218746718700436383">

@@ -17,8 +17,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Brick = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCD = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Output = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OutputLCD = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OutputSensor = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OutputSerial = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Sensor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_State = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Transition = new ConceptPresentationBuilder().create();
@@ -45,9 +45,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 7:
         return props_Output;
       case 8:
-        return props_OutputLCD;
-      case 9:
         return props_OutputSensor;
+      case 9:
+        return props_OutputSerial;
       case 10:
         return props_Sensor;
       case 11:
