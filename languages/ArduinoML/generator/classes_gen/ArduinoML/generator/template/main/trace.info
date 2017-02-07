@@ -64,10 +64,10 @@
     <file name="QueriesGenerated.java">
       <node id="4197875816661692346" at="52,108,53,187" concept="0" />
       <node id="8218746718700471134" at="58,120,59,192" concept="0" />
-      <node id="6483884641801756138" at="61,120,62,192" concept="0" />
+      <node id="568827680998237654" at="61,119,62,192" concept="0" />
       <scope id="4197875816661692340" at="52,108,53,187" />
       <scope id="8218746718700471128" at="58,120,59,192" />
-      <scope id="6483884641801756132" at="61,120,62,192" />
+      <scope id="568827680998237648" at="61,119,62,192" />
     </file>
   </root>
   <root nodeRef="r:38e072e0-de73-4db8-bda3-de3ebf74f73e(ArduinoML.generator.template.main@generator)/8218746718700436383">

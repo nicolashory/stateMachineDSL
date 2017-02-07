@@ -20,6 +20,5 @@ public class map_App {
     System.out.println("\n// Behavioral concepts");
     System.out.println("long time = 0; long debounce = 200;\n");
 
-    System.out.println("void loop() {}");
   }
 }

@@ -335,15 +335,6 @@
       <node concept="3F0ifn" id="2gbl3Mkd95F" role="3EZMnx">
         <property role="3F0ifm" value="display" />
       </node>
-      <node concept="1iCGBv" id="2gbl3MkbH0a" role="3EZMnx">
-        <ref role="1NtTu8" to="67j:2gbl3Mkb2Kh" resolve="lcd" />
-        <node concept="1sVBvm" id="2gbl3MkbH0b" role="1sWHZn">
-          <node concept="3F0A7n" id="2gbl3MkbH0g" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="67j:3D1Qt1vjX0Q" resolve="bus" />
-          </node>
-        </node>
-      </node>
       <node concept="3F0ifn" id="2gbl3MkbH0o" role="3EZMnx">
         <property role="3F0ifm" value="&quot;" />
       </node>

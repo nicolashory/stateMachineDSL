@@ -23,7 +23,6 @@
       </concept>
       <concept id="2597262229269916627" name="ArduinoML.structure.ActionLCD" flags="ng" index="2K9RZJ">
         <property id="2597262229269916691" name="message" index="2K9RwJ" />
-        <reference id="2597262229269916689" name="lcd" index="2K9RwH" />
       </concept>
       <concept id="6483884641801180718" name="ArduinoML.structure.State" flags="ng" index="3uOfik">
         <child id="6483884641801182880" name="transitions" index="3uOfKq" />
@@ -71,12 +70,11 @@
       <node concept="3uOfMU" id="2gbl3Mkbn4G" role="3uOfKq">
         <property role="TrG5h" value="transition1" />
         <ref role="3uPXf9" node="2gbl3Mkd3Yg" resolve="state2" />
-        <node concept="2K9RZJ" id="2gbl3Mkcvb0" role="10aWve">
-          <property role="2K9RwJ" value="coucou" />
-          <ref role="2K9RwH" node="2ZmAQRvHINb" />
-        </node>
         <node concept="2zFGQ6" id="1R4EZf6snGs" role="2zFGRZ">
           <property role="2K9RwE" value="bonjour" />
+        </node>
+        <node concept="2K9RZJ" id="v$Sscok0RQ" role="10aWve">
+          <property role="2K9RwJ" value="coucou" />
         </node>
       </node>
     </node>
@@ -97,9 +95,8 @@
       <node concept="3uOfMU" id="2gbl3Mkd8Cd" role="3uOfKq">
         <property role="TrG5h" value="transition2" />
         <ref role="3uPXf9" node="2gbl3Mkbn4F" resolve="state1" />
-        <node concept="2K9RZJ" id="2gbl3Mkd8Cn" role="10aWve">
+        <node concept="2K9RZJ" id="v$Sscok0Sn" role="10aWve">
           <property role="2K9RwJ" value="transition faite" />
-          <ref role="2K9RwH" node="2ZmAQRvHINb" />
         </node>
         <node concept="2K9RZj" id="2gbl3Mkd8Cs" role="10aWve">
           <property role="2K9RwL" value="false" />

@@ -204,9 +204,9 @@
       </node>
     </node>
     <node concept="3aamgX" id="VAA6jmuvgs" role="3acgRq">
-      <ref role="30HIoZ" to="67j:5PafNJYTfaX" resolve="OutputLCD" />
+      <ref role="30HIoZ" to="67j:5PafNJYTfaX" resolve="OutputSerial" />
       <node concept="j$656" id="VAA6jmuvin" role="1lVwrX">
-        <ref role="v9R2y" node="VAA6jmuvh2" resolve="reduce_OutputLCD" />
+        <ref role="v9R2y" node="VAA6jmuvh2" resolve="reduce_OutputSerial" />
       </node>
     </node>
     <node concept="3aamgX" id="VAA6jmuvgI" role="3acgRq">
@@ -399,44 +399,30 @@
           </node>
         </node>
         <node concept="3clFbH" id="5BVoFE7c8KE" role="3cqZAp" />
-        <node concept="3clFbF" id="5BVoFE7c82d" role="3cqZAp">
-          <node concept="2OqwBi" id="5BVoFE7c8iA" role="3clFbG">
-            <node concept="10M0yZ" id="5BVoFE7c82c" role="2Oq$k0">
+        <node concept="3clFbF" id="v$SscojLc8" role="3cqZAp">
+          <node concept="2OqwBi" id="v$SscojLc5" role="3clFbG">
+            <node concept="10M0yZ" id="v$SscojLc6" role="2Oq$k0">
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
-            <node concept="liA8E" id="5BVoFE7c8B7" role="2OqNvi">
+            <node concept="liA8E" id="v$SscojLc7" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5BVoFE7c8C0" role="37wK5m">
-                <property role="Xl_RC" value="  // Here comes states declarations" />
+              <node concept="Xl_RD" id="v$SscojLxe" role="37wK5m">
+                <property role="Xl_RC" value="//States declarations" />
               </node>
             </node>
           </node>
-          <node concept="2b32R4" id="5BVoFE7d5Rw" role="lGtFl">
-            <node concept="3JmXsc" id="5BVoFE7d5Rz" role="2P8S$">
-              <node concept="3clFbS" id="5BVoFE7d5R$" role="2VODD2">
-                <node concept="3clFbF" id="5BVoFE7d5RE" role="3cqZAp">
-                  <node concept="2OqwBi" id="5BVoFE7d5R_" role="3clFbG">
-                    <node concept="3Tsc0h" id="5BVoFE7d5RC" role="2OqNvi">
+          <node concept="2b32R4" id="v$SscojMnc" role="lGtFl">
+            <node concept="3JmXsc" id="v$SscojMnf" role="2P8S$">
+              <node concept="3clFbS" id="v$SscojMng" role="2VODD2">
+                <node concept="3clFbF" id="v$SscojMnm" role="3cqZAp">
+                  <node concept="2OqwBi" id="v$SscojMnh" role="3clFbG">
+                    <node concept="3Tsc0h" id="v$SscojMnk" role="2OqNvi">
                       <ref role="3TtcxE" to="67j:5BVoFE7aTUz" resolve="states" />
                     </node>
-                    <node concept="30H73N" id="5BVoFE7d5RD" role="2Oq$k0" />
+                    <node concept="30H73N" id="v$SscojMnl" role="2Oq$k0" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="VAA6jmwlhY" role="3cqZAp">
-          <node concept="2OqwBi" id="VAA6jmwlhV" role="3clFbG">
-            <node concept="10M0yZ" id="VAA6jmwlhW" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="VAA6jmwlhX" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="VAA6jmwl_9" role="37wK5m">
-                <property role="Xl_RC" value="void loop() {}" />
               </node>
             </node>
           </node>
@@ -658,6 +644,7 @@
                     <property role="Xl_RC" value="    else { state_" />
                   </node>
                   <node concept="Xl_RD" id="VAA6jmuaga" role="3uHU7w">
+                    <property role="Xl_RC" value="STATE_NAME" />
                     <node concept="17Uvod" id="VAA6jmudD2" role="lGtFl">
                       <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                       <property role="2qtEX9" value="value" />
@@ -1024,8 +1011,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="VAA6jmuvh2">
-    <property role="TrG5h" value="reduce_OutputLCD" />
-    <ref role="3gUMe" to="67j:5PafNJYTfaX" resolve="OutputLCD" />
+    <property role="TrG5h" value="reduce_OutputSerial" />
+    <ref role="3gUMe" to="67j:5PafNJYTfaX" resolve="OutputSerial" />
     <node concept="9aQIb" id="VAA6jmuvit" role="13RCb5">
       <node concept="3clFbS" id="VAA6jmuvi$" role="9aQI4">
         <node concept="3clFbF" id="VAA6jmuviy" role="3cqZAp">

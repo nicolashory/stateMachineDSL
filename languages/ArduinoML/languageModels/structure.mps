@@ -245,13 +245,6 @@
     <property role="EcuMT" value="2597262229269916627" />
     <property role="TrG5h" value="ActionLCD" />
     <ref role="1TJDcQ" node="5BVoFE7aTCq" resolve="Action" />
-    <node concept="1TJgyj" id="2gbl3Mkb2Kh" role="1TKVEi">
-      <property role="IQ2ns" value="2597262229269916689" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="lcd" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3qUXwr31l17" resolve="LCD" />
-    </node>
     <node concept="1TJgyi" id="2gbl3Mkb2Kj" role="1TKVEl">
       <property role="IQ2nx" value="2597262229269916691" />
       <property role="TrG5h" value="message" />
