@@ -108,20 +108,5 @@
       </node>
     </node>
   </node>
-  <node concept="3T3p6P" id="1R4EZf6sssy">
-    <property role="TrG5h" value="MissileLauncher" />
-    <ref role="vIMoU" node="2gbl3Mkbn4F" resolve="state1" />
-    <node concept="3PJUp1" id="1R4EZf6sssY" role="1_4667">
-      <property role="1_3wBA" value="2, 3, 4, 5, 6, 7, 8" />
-    </node>
-    <node concept="3T334G" id="1R4EZf6sst0" role="3T3nKE">
-      <property role="TrG5h" value="redButton" />
-      <property role="3T3nKM" value="1" />
-    </node>
-    <node concept="3T3p6N" id="1R4EZf6sst5" role="3T3nKE">
-      <property role="TrG5h" value="redLight" />
-      <property role="3T3nKM" value="9" />
-    </node>
-  </node>
 </model>
 

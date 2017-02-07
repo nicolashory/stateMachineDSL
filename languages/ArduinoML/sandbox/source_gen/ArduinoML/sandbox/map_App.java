@@ -13,13 +13,36 @@ public class map_App {
     System.out.println("// Structural concepts");
     System.out.println("void setup() {");
     System.out.println("  Serial.begin(9600);\n  lcd.begin(16,2); //Initialisation du lcd");
-    System.out.println("  pinMode(" + 1 + ", INPUT);");
-    System.out.println("  pinMode(" + 9 + ", OUTPUT);");
+    System.out.println("  pinMode(" + 11 + ", OUTPUT);");
+    System.out.println("  pinMode(" + 12 + ", INPUT);");
     System.out.println("}");
 
     System.out.println("\n// Behavioral concepts");
     System.out.println("long time = 0; long debounce = 200;\n");
 
+    System.out.println("void state_" + "state1" + "() {");
+    System.out.println("    boolean guard = millis() - time > debounce;");
+    System.out.println("    // Transition " + "transition1");
+    System.out.println("    if (Serial.available() > 0 && Serial.readString() == \"" + "bonjour" + "\" && guard) {");
+    System.out.println("        time = millis();");
+    System.out.println("        displayOnScreen(\"" + "coucou" + "\");");
+    System.out.println("        state = state_" + "state2" + "(); }");
+    System.out.println("    else { state_" + "state1" + "(); }");
+    System.out.println("}\n");
+    System.out.println("void state_" + "state2" + "() {");
+    System.out.println("    boolean guard = millis() - time > debounce;");
+    System.out.println("    // Transition " + "transition1");
+    System.out.println("    if (digitalRead(" + 12 + ") == " + "HIGH" + " && guard) {");
+    System.out.println("        time = millis();");
+    System.out.println("        digitalWrite(" + 11 + "," + "LOW" + ");");
+    System.out.println("        state = state_" + "state1" + "(); }");
+    System.out.println("    // Transition " + "transition2");
+    System.out.println("    if (digitalRead(" + 12 + ") == " + "HIGH" + " && guard) {");
+    System.out.println("        time = millis();");
+    System.out.println("        digitalWrite(" + 11 + "," + "HIGH" + ");");
+    System.out.println("        state = state_" + "state1" + "(); }");
+    System.out.println("    else { state_" + "state2" + "(); }");
+    System.out.println("}\n");
     System.out.println("void loop() {state_" + "state1" + "(); }");
   }
 }
