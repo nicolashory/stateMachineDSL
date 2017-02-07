@@ -41,6 +41,7 @@
         <property id="8218746718699890346" name="pin" index="3T3nKM" />
       </concept>
       <concept id="8218746718699866925" name="ArduinoML.structure.App" flags="ng" index="3T3p6P">
+        <reference id="568827680999327737" name="initial_state" index="vIMoU" />
         <child id="6483884641801182883" name="states" index="3uOfKp" />
         <child id="4197875816661629015" name="lcd" index="1_4667" />
         <child id="8218746718699890354" name="bricks" index="3T3nKE" />
@@ -54,6 +55,7 @@
   </registry>
   <node concept="3T3p6P" id="78eQDyb1OBR">
     <property role="TrG5h" value="MachineEtat" />
+    <ref role="vIMoU" node="2gbl3Mkbn4F" resolve="state1" />
     <node concept="3T3p6N" id="3kxaSLuyMfL" role="3T3nKE">
       <property role="TrG5h" value="red_led" />
       <property role="3T3nKM" value="11" />
@@ -99,11 +101,16 @@
           <property role="2K9mBO" value="true" />
           <ref role="2K8y$v" node="2gbl3MkbiYj" resolve="button" />
         </node>
+        <node concept="2K9RZj" id="v$SsconQHO" role="10aWve">
+          <property role="2K9RwL" value="true" />
+          <ref role="2K9RwR" node="3kxaSLuyMfL" resolve="red_led" />
+        </node>
       </node>
     </node>
   </node>
   <node concept="3T3p6P" id="1R4EZf6sssy">
     <property role="TrG5h" value="MissileLauncher" />
+    <ref role="vIMoU" node="2gbl3Mkbn4F" resolve="state1" />
     <node concept="3PJUp1" id="1R4EZf6sssY" role="1_4667">
       <property role="1_3wBA" value="2, 3, 4, 5, 6, 7, 8" />
     </node>

@@ -112,6 +112,13 @@
     <node concept="PrWs8" id="5BVoFE7b1lu" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="v$SsconWvT" role="1TKVEi">
+      <property role="IQ2ns" value="568827680999327737" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="initial_state" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5BVoFE7aToI" resolve="State" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5BVoFE7aToI">
     <property role="TrG5h" value="State" />

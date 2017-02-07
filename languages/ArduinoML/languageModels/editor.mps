@@ -289,6 +289,24 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="3F0ifn" id="v$Sscoo2kh" role="3EZMnx">
+          <property role="3F0ifm" value="initial state:" />
+          <node concept="lj46D" id="v$Sscoo2kK" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="1iCGBv" id="v$SsconWwO" role="3EZMnx">
+          <ref role="1NtTu8" to="67j:v$SsconWvT" resolve="initial_state" />
+          <node concept="1sVBvm" id="v$SsconWwR" role="1sWHZn">
+            <node concept="3F0A7n" id="v$SsconWxn" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+          <node concept="lj46D" id="v$SsconWxq" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="3F0ifn" id="7SH1P5uubTh" role="3EZMnx">
           <node concept="ljvvj" id="7SH1P5uubTi" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -358,6 +376,9 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="v$SsconQIn" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0A7n" id="2gbl3MkbCtY" role="3EZMnx">
         <ref role="1NtTu8" to="67j:2gbl3Mkb2Kd" resolve="status" />
