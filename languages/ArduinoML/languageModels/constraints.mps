@@ -79,6 +79,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -786,11 +789,58 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="v$SscokO_5" role="3cqZAp">
-          <node concept="3fqX7Q" id="v$SscokO_6" role="3clFbG">
-            <node concept="37vLTw" id="v$SscokO_7" role="3fr31v">
-              <ref role="3cqZAo" node="v$SscokO$x" resolve="nameAlreadyUsed" />
+        <node concept="3cpWs8" id="v$Sscom8wY" role="3cqZAp">
+          <node concept="3cpWsn" id="v$Sscom8x1" role="3cpWs9">
+            <property role="TrG5h" value="goodTargetState" />
+            <node concept="10P_77" id="v$Sscom8wW" role="1tU5fm" />
+            <node concept="1eOMI4" id="v$Sscom9sK" role="33vP2m">
+              <node concept="3y3z36" id="v$Sscom_Mg" role="1eOMHV">
+                <node concept="2OqwBi" id="v$Sscomb7m" role="3uHU7B">
+                  <node concept="2OqwBi" id="v$Sscomais" role="2Oq$k0">
+                    <node concept="EsrRn" id="v$Sscoma2E" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="v$SscomaCo" role="2OqNvi">
+                      <ref role="3Tt5mk" to="67j:5BVoFE7bb5N" resolve="target" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="v$Sscombmu" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="v$SscomOWW" role="3uHU7w">
+                  <node concept="1PxgMI" id="v$SscomOiU" role="2Oq$k0">
+                    <ref role="1m5ApE" to="67j:5BVoFE7aToI" resolve="State" />
+                    <node concept="nLn13" id="v$SscomNKR" role="1m5AlR" />
+                  </node>
+                  <node concept="3TrcHB" id="v$SscomPk7" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="v$SscomdCc" role="3cqZAp">
+          <node concept="3clFbS" id="v$SscomdCe" role="3clFbx">
+            <node concept="3cpWs6" id="v$Sscomfz9" role="3cqZAp">
+              <node concept="3clFbT" id="v$Sscomfzm" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="v$SscomePH" role="3clFbw">
+            <node concept="3fqX7Q" id="v$Sscomf4P" role="3uHU7w">
+              <node concept="37vLTw" id="v$Sscomfk0" role="3fr31v">
+                <ref role="3cqZAo" node="v$SscokO$x" resolve="nameAlreadyUsed" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="v$SscomdS9" role="3uHU7B">
+              <ref role="3cqZAo" node="v$Sscom8x1" resolve="goodTargetState" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="v$SscomgiK" role="3cqZAp">
+          <node concept="3clFbT" id="v$Sscom_z4" role="3cqZAk">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>

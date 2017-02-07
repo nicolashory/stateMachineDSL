@@ -739,6 +739,41 @@
     <ref role="3gUMe" to="67j:5BVoFE7aTS0" resolve="Transition" />
     <node concept="9aQIb" id="5BVoFE7cGN4" role="13RCb5">
       <node concept="3clFbS" id="5BVoFE7cGN6" role="9aQI4">
+        <node concept="3clFbF" id="v$SscolPvB" role="3cqZAp">
+          <node concept="2OqwBi" id="v$SscolPv$" role="3clFbG">
+            <node concept="10M0yZ" id="v$SscolPv_" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="v$SscolPvA" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="v$SscolTw4" role="37wK5m">
+                <node concept="Xl_RD" id="v$SscolTN1" role="3uHU7w">
+                  <property role="Xl_RC" value="TRANSITION_NAME" />
+                  <node concept="17Uvod" id="v$SscolUpt" role="lGtFl">
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                    <property role="2qtEX9" value="value" />
+                    <node concept="3zFVjK" id="v$SscolUpw" role="3zH0cK">
+                      <node concept="3clFbS" id="v$SscolUpx" role="2VODD2">
+                        <node concept="3clFbF" id="v$SscolUpB" role="3cqZAp">
+                          <node concept="2OqwBi" id="v$SscolUpy" role="3clFbG">
+                            <node concept="3TrcHB" id="v$SscolUp_" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                            <node concept="30H73N" id="v$SscolUpA" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="v$SscolPXi" role="3uHU7B">
+                  <property role="Xl_RC" value="// Transition " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="VAA6jmunuW" role="3cqZAp">
           <node concept="2OqwBi" id="VAA6jmunuT" role="3clFbG">
             <node concept="10M0yZ" id="VAA6jmunuU" role="2Oq$k0">

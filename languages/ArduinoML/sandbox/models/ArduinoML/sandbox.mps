@@ -92,18 +92,12 @@
           <ref role="2K9RwR" node="3kxaSLuyMfL" resolve="red_led" />
         </node>
       </node>
-      <node concept="3uOfMU" id="2gbl3Mkd8Cd" role="3uOfKq">
+      <node concept="3uOfMU" id="v$SscomoG9" role="3uOfKq">
         <property role="TrG5h" value="transition2" />
         <ref role="3uPXf9" node="2gbl3Mkbn4F" resolve="state1" />
-        <node concept="2K9RZJ" id="v$Sscok0Sn" role="10aWve">
-          <property role="2K9RwJ" value="transition faite" />
-        </node>
-        <node concept="2K9RZj" id="2gbl3Mkd8Cs" role="10aWve">
-          <property role="2K9RwL" value="false" />
-          <ref role="2K9RwR" node="3kxaSLuyMfL" resolve="red_led" />
-        </node>
-        <node concept="2zFGQ6" id="1R4EZf6snGW" role="2zFGRZ">
-          <property role="2K9RwE" value="salut" />
+        <node concept="2zFGQ5" id="v$SscomoGF" role="2zFGRZ">
+          <property role="2K9mBO" value="true" />
+          <ref role="2K8y$v" node="2gbl3MkbiYj" resolve="button" />
         </node>
       </node>
     </node>

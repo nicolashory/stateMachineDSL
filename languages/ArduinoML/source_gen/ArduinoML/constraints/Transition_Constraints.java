@@ -49,7 +49,11 @@ public class Transition_Constraints extends BaseConstraintsDescriptor {
         }
       }
     });
-    return !(nameAlreadyUsed.value);
+    boolean goodTargetState = (SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b9e00L, 0x59fb62ba872cb173L, "target")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) != SPropertyOperations.getString(SNodeOperations.cast(parentNode, MetaAdapterFactory.getConcept(0x5edee0cf46e149f9L, 0x971e6b9e2e5cae16L, 0x59fb62ba872b962eL, "ArduinoML.structure.State")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    if (goodTargetState && !(nameAlreadyUsed.value)) {
+      return true;
+    }
+    return false;
   }
   private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:d79d2cda-3667-41d9-9202-b2af5f45b79f(ArduinoML.constraints)", "568827680998507491");
 }
