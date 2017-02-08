@@ -369,35 +369,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5BVoFE7c65N" role="3cqZAp" />
-        <node concept="3clFbF" id="5BVoFE7c6oE" role="3cqZAp">
-          <node concept="2OqwBi" id="5BVoFE7c6Bl" role="3clFbG">
-            <node concept="10M0yZ" id="5BVoFE7c6oD" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5BVoFE7c6Vc" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5BVoFE7c6Wt" role="37wK5m">
-                <property role="Xl_RC" value="\n// Behavioral concepts" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5BVoFE7c7cg" role="3cqZAp">
-          <node concept="2OqwBi" id="5BVoFE7c7rM" role="3clFbG">
-            <node concept="10M0yZ" id="5BVoFE7c7cf" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5BVoFE7c7JY" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5BVoFE7c7Mj" role="37wK5m">
-                <property role="Xl_RC" value="long time = 0; long debounce = 200;\n" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="5BVoFE7c8KE" role="3cqZAp" />
         <node concept="3clFbF" id="v$SscojLc8" role="3cqZAp">
           <node concept="2OqwBi" id="v$SscojLc5" role="3clFbG">
@@ -630,20 +601,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="VAA6jmvdPn" role="3cqZAp">
-          <node concept="2OqwBi" id="VAA6jmvdPk" role="3clFbG">
-            <node concept="10M0yZ" id="VAA6jmvdPl" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="VAA6jmvdPm" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="VAA6jmvebr" role="37wK5m">
-                <property role="Xl_RC" value="    boolean guard = millis() - time &gt; debounce;" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5BVoFE7cMs8" role="3cqZAp">
           <node concept="2OqwBi" id="5BVoFE7cMvH" role="3clFbG">
             <node concept="10M0yZ" id="5BVoFE7cMs7" role="2Oq$k0">
@@ -847,20 +804,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5BVoFE7cKyv" role="3cqZAp">
-          <node concept="2OqwBi" id="5BVoFE7cKZD" role="3clFbG">
-            <node concept="10M0yZ" id="5BVoFE7cKyu" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5BVoFE7cLh$" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5BVoFE7cLi7" role="37wK5m">
-                <property role="Xl_RC" value="        time = millis();" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="VAA6jmvPg2" role="3cqZAp">
           <node concept="2OqwBi" id="VAA6jmvPfZ" role="3clFbG">
             <node concept="10M0yZ" id="VAA6jmvPg0" role="2Oq$k0">
@@ -903,7 +846,7 @@
                 </node>
                 <node concept="3cpWs3" id="VAA6jmvRmW" role="3uHU7B">
                   <node concept="Xl_RD" id="VAA6jmvQjW" role="3uHU7B">
-                    <property role="Xl_RC" value="        state = state_" />
+                    <property role="Xl_RC" value="        state_" />
                   </node>
                   <node concept="Xl_RD" id="VAA6jmvRoS" role="3uHU7w">
                     <property role="Xl_RC" value="TARGET_STATE" />
@@ -957,7 +900,7 @@
                     <property role="Xl_RC" value="LiquidCrystal lcd(" />
                   </node>
                   <node concept="Xl_RD" id="5C9fUwg$yLW" role="3uHU7w">
-                    <property role="Xl_RC" value="" />
+                    <property role="Xl_RC" value="BUS_VALUE" />
                     <node concept="17Uvod" id="5C9fUwg$yRX" role="lGtFl">
                       <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                       <property role="2qtEX9" value="value" />
@@ -993,7 +936,7 @@
             <node concept="liA8E" id="5C9fUwg$Rux" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="5C9fUwg$RLR" role="37wK5m">
-                <property role="Xl_RC" value="/*\n * Affichage d'un message sur l'écran LCD\n */\nvoid displayOnScreen (String msg) { \n  lcd.clear();//clears the LCD and positions the cursor in the upper-left corner\n  lcd.setCursor(2,1); // On place le curseur\n  lcd.print(msg);// Print a message to the LCD.\n  // Si message supérieur à la taille de l'écran\n  if (msg.length() &gt; 13) {\n    for (int positionCounter = 0; positionCounter &lt; msg.length() - 13; positionCounter++) {\n      lcd.scrollDisplayLeft();  // scroll one position left:\n      delay(500); // délai d'attente\n    }  \n  }\n}" />
+                <property role="Xl_RC" value="/*\n * Affichage d'un message sur l'écran LCD\n */\nvoid displayOnScreen (String msg) { \n  lcd.clear();//clears the LCD and positions the cursor in the upper-left corner\n  lcd.setCursor(2,1); // On place le curseur\n  lcd.print(msg);// Print a message to the LCD.\n  // Si message supérieur à la taille de l'écran\n  if (msg.length() &gt; 13) {\n    for (int positionCounter = 0; positionCounter &lt; msg.length() - 13; positionCounter++) {\n      lcd.scrollDisplayLeft();  // scroll one position left:\n      delay(300); // délai d'attente\n    }  \n  }\n}" />
               </node>
             </node>
           </node>
@@ -1103,27 +1046,42 @@
             </node>
             <node concept="liA8E" id="VAA6jmuvix" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="VAA6jmuCH$" role="37wK5m">
-                <node concept="Xl_RD" id="VAA6jmuDad" role="3uHU7w">
-                  <property role="Xl_RC" value="\&quot; &amp;&amp; guard) {" />
+              <node concept="Xl_RD" id="VAA6jmuvj6" role="37wK5m">
+                <property role="Xl_RC" value="    String read = Serial.readString();" />
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="VAA6jmuvqa" role="lGtFl" />
+        </node>
+        <node concept="3clFbF" id="6xOriGl$F3m" role="3cqZAp">
+          <node concept="2OqwBi" id="6xOriGl$F3j" role="3clFbG">
+            <node concept="10M0yZ" id="6xOriGl$F3k" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6xOriGl$F3l" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="6xOriGl$Hbv" role="37wK5m">
+                <node concept="Xl_RD" id="6xOriGl$HbF" role="3uHU7w">
+                  <property role="Xl_RC" value="\&quot;) != -1) {" />
                 </node>
-                <node concept="3cpWs3" id="VAA6jmu_IL" role="3uHU7B">
-                  <node concept="Xl_RD" id="VAA6jmuvj6" role="3uHU7B">
-                    <property role="Xl_RC" value="    if (Serial.available() &gt; 0 &amp;&amp; Serial.readString() == \&quot;" />
+                <node concept="3cpWs3" id="6xOriGl$G1A" role="3uHU7B">
+                  <node concept="Xl_RD" id="6xOriGl$F4k" role="3uHU7B">
+                    <property role="Xl_RC" value="    if (read.indexOf(\&quot;" />
                   </node>
-                  <node concept="Xl_RD" id="VAA6jmu_JH" role="3uHU7w">
+                  <node concept="Xl_RD" id="6xOriGl$GzV" role="3uHU7w">
                     <property role="Xl_RC" value="MESSAGE" />
-                    <node concept="17Uvod" id="VAA6jmu_PB" role="lGtFl">
+                    <node concept="17Uvod" id="6xOriGl$IhJ" role="lGtFl">
                       <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                       <property role="2qtEX9" value="value" />
-                      <node concept="3zFVjK" id="VAA6jmu_PE" role="3zH0cK">
-                        <node concept="3clFbS" id="VAA6jmu_PF" role="2VODD2">
-                          <node concept="3clFbF" id="VAA6jmu_PL" role="3cqZAp">
-                            <node concept="2OqwBi" id="VAA6jmu_PG" role="3clFbG">
-                              <node concept="3TrcHB" id="VAA6jmu_PJ" role="2OqNvi">
+                      <node concept="3zFVjK" id="6xOriGl$IhM" role="3zH0cK">
+                        <node concept="3clFbS" id="6xOriGl$IhN" role="2VODD2">
+                          <node concept="3clFbF" id="6xOriGl$IhT" role="3cqZAp">
+                            <node concept="2OqwBi" id="6xOriGl$IhO" role="3clFbG">
+                              <node concept="3TrcHB" id="6xOriGl$IhR" role="2OqNvi">
                                 <ref role="3TsBF5" to="67j:2gbl3Mkb2Km" resolve="message" />
                               </node>
-                              <node concept="30H73N" id="VAA6jmu_PK" role="2Oq$k0" />
+                              <node concept="30H73N" id="6xOriGl$IhS" role="2Oq$k0" />
                             </node>
                           </node>
                         </node>
@@ -1134,7 +1092,7 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="VAA6jmuvqa" role="lGtFl" />
+          <node concept="raruj" id="6xOriGl$J31" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1154,7 +1112,7 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="VAA6jmuYfG" role="37wK5m">
                 <node concept="Xl_RD" id="VAA6jmuYI1" role="3uHU7w">
-                  <property role="Xl_RC" value=" &amp;&amp; guard) {" />
+                  <property role="Xl_RC" value=") {" />
                 </node>
                 <node concept="3cpWs3" id="VAA6jmuSml" role="3uHU7B">
                   <node concept="3cpWs3" id="VAA6jmuQpJ" role="3uHU7B">
